@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pokémon Slider</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">  
+    <link rel="shortcut icon" href="src/images/pokebola.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Poderia colocar como divs tambem, mas não seria semântico -->
+    <header class="header">
+        <img src="src/images/pokebola.png" alt="Imagem da pokebola">
+        <h1 class="titulo-principal">Pokémon</h1>
+    </header>
+
+    <main class="pokemon-slider">
+        <button class="btn-arrow btn-voltar">
+            <img src="src/images/seta.png" alt="Seta voltar">
+        </button>
+
+        <ul class="pokemons-list">
+            <li class="card selected fundo-1">
+                <div class="informations">
+                    <h2 class="pokemon-name">
+                        Pikachu
+                    </h2>
+                    <p class="hp">HP 300</p>
+                </div>
+
+                <div class="container-image">
+                    <img src="src/images/pikachu.png" alt="Imagem do Pikachu" class="pokemon-image">
+                </div>
+
+                <div class="description">
+                    <h3 class="title">
+                        Descrição
+                    </h3>
+                    <p class="text">
+                        Os Pikachus são pequenos roedores de quarenta centímetros e de seis quilogramas, com um corpo redondo, pernas curtas e uma longa cauda, quando macho, a cauda tem o formato de um raio, mas se o Pikachu for fêmea sua cauda ganha um coração na ponta.
+                    </p>
+                </div>
+            </li>
+            <li class="card fundo-2">
+                <div>
+                    <h2 class="pokemon-name">
+                        Charizard
+                    </h2>
+                    <p class="hp">HP 800</p>
+                </div>
+
+                <div class="container-image">
+                    <img src="src/images/charizard.png" alt="Imagem do Charizard">
+                </div>
+
+                <div class="description">
+                    <h3 class="title">
+                        Descrição
+                    </h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusamus iste, ex inventore nesciunt non veniam quibusdam voluptate assumenda aliquam eligendi! Ratione alias architecto officiis nihil sit? Asperiores, voluptatem est.
+                    </p>
+                </div>
+            </li>
+            <li class="card fundo-3">
+                <div>
+                    <h2 class="pokemon-name">
+                        Mewtwo
+                    </h2>
+                    <p class="hp">HP 1200</p>
+                </div>
+
+                <div class="container-image">
+                    <img src="src/images/mewtwo.png" alt="Imagem do Mewtwo">
+                </div>
+
+                <div class="description">
+                    <h3 class="title">
+                        Descrição
+                    </h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusamus iste, ex inventore nesciunt non veniam quibusdam voluptate assumenda aliquam eligendi! Ratione alias architecto officiis nihil sit? Asperiores, voluptatem est.
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+        <button class="btn-arrow">
+            <img src="src/images/seta.png" alt="Seta avançar">
+        </button>
+    </main>
+</body>
+</html>
