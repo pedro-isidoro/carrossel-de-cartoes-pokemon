@@ -22,5 +22,12 @@
         max-height: 230px;
     }
 
-    
+    .card .pokemon-name{
+        max-width: 50%;
+        font-size: 18px;
+    }
+
+    .card .hp{
+        font-size: 14px;
+    }
 }
