@@ -31,3 +31,46 @@
         font-size: 14px;
     }
 }
+
+@media(max-width: 376px){
+    .pokemon-slider .pokemons-list{
+        height: 400px; 
+    }
+
+    .card .pokemon-image{
+        max-height: 200px;
+    }
+
+    .card .description .text{
+        font-size: 1.2rem;
+        padding: 1.2rem;
+        max-height: 8.8rem;
+    }
+}
+
+@media(max-width: 321px){
+    .pokemon-slider .pokemons-list{
+        height: 320px; 
+    }
+
+    .card .informations{
+        padding: 0.4rem 1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .card .pokemon-image{
+        max-height: 180px;
+    }
+
+    .card .description .title{
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .card .description .text{
+        font-size: 1.2rem;
+        padding: 1rem;
+        max-height: 4rem;
+    }
+}
