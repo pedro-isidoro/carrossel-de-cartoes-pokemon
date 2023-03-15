@@ -1,0 +1,26 @@
+@media(max-width: 620px){
+    .pokemon-slider{
+        padding: 0 15px;
+        gap: 10px;
+    }
+
+    .pokemon-slider .btn-arrow{
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pokemon-slider .pokemons-list{
+        height: 480px; 
+    }
+
+    .card .pokemon-image{
+        max-height: 230px;
+    }
+
+    
+}
