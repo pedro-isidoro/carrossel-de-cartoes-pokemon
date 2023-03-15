@@ -1,4 +1,4 @@
- /*
+/*
  Objetivo 1 - Quando clicarmos nas setas de avançar, temos que mostrar o próximo cartão
     - Passo 1 - Dar um jeito de pegar o elemento HTML da seta avançar;
     - Passo 2 - Dar um jeito de identificar o clique do usuário na seta avançar;
@@ -12,30 +12,37 @@
     - Passo 4 - buscar o cartão que esta selecionado e esconder
  */
 
-const btnAvancar = document.getElementById('btn-avancar');
-const btnVoltar = document.getElementById('btn-voltar');
+const btnAvancar = document.getElementById("btn-avancar");
+const btnVoltar = document.getElementById("btn-voltar");
 const cartoes = document.querySelectorAll(".card");
 let cartaoAtual = 0;
 
+function esconderCartaoSelecionado() {
+  const cartaoSelecionado = document.querySelector(".selected");
+  cartaoSelecionado.classList.remove("selected");
+}
+
+function mostrarCartao(indiceCartao) {
+  cartoes[indiceCartao].classList.add("selected");
+}
+
 // Objetivo 1
-btnAvancar.addEventListener('click', () =>{
-    // Executa até 2 ser identico á 2, depois para
-    if(cartaoAtual === cartoes.length - 1) return
+btnAvancar.addEventListener("click", () => {
+  // Executa até 2 ser identico á 2, depois para
+  if (cartaoAtual === cartoes.length - 1) return;
 
-    const cartaoSelecionado = document.querySelector(".selected");
-    cartaoSelecionado.classList.remove("selected");
+  esconderCartaoSelecionado();
 
-    cartaoAtual++;
-    cartoes[cartaoAtual].classList.add("selected");
+  cartaoAtual++;
+  mostrarCartao(cartaoAtual);
 });
 
 // Objetivo 2
-btnVoltar.addEventListener('click', () =>{
-    if(cartaoAtual === 0) return;
+btnVoltar.addEventListener("click", () => {
+  if (cartaoAtual === 0) return;
 
-    const cartaoSelecionado = document.querySelector(".selected");
-    cartaoSelecionado.classList.remove("selected");
+  esconderCartaoSelecionado();
 
-    cartaoAtual--;
-    cartoes[cartaoAtual].classList.add("selected")
+  cartaoAtual--;
+  mostrarCartao(cartaoAtual);
 });
